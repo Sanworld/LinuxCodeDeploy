@@ -1,8 +1,9 @@
 version: 0.0
 os: linux
-files: overwrite: true
+files: 
   - source: /index.html
     destination: /var/www/html/
+    overwrite: true
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
